@@ -8,7 +8,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { fetchProfileData, fetchTraktHistory, fetchSpecificYears, processTraktHistory, imageToBase64, fetchUserStats } from './fetcher.js';
+import { fetchProfileData, fetchTraktHistory, processTraktHistory, imageToBase64, fetchUserStats } from './fetcher.js';
 import { generateSvg, generateMultiYearSvg } from './generator.js';
 import { svgToPng } from './exporter.js';
 
@@ -17,6 +17,86 @@ const __dirname = path.dirname(__filename);
 
 // Trakt logo URL
 const TRAKT_LOGO_URL = 'https://trakt.tv/assets/logos/logomark.square.gradient-b644b16c38ff775861b4b1f58c1230f6a097a2466ab33ae00445a505c33fcb91.svg';
+
+function getVariantConfigs(outputBasePath, contentType, generateAllVariants) {
+  if (!generateAllVariants) {
+    return [{ contentType, outputBasePath }];
+  }
+
+  const outputDir = path.dirname(outputBasePath);
+  return [
+    { contentType: 'all', outputBasePath },
+    { contentType: 'movies', outputBasePath: path.join(outputDir, 'trakt-movies') },
+    { contentType: 'shows', outputBasePath: path.join(outputDir, 'trakt-shows') }
+  ];
+}
+
+function collectEntriesForYears(rawHistory, years) {
+  let allEntries = [];
+
+  for (const year of years) {
+    const { entries } = processTraktHistory(rawHistory, year);
+    allEntries = allEntries.concat(entries);
+  }
+
+  return allEntries;
+}
+
+function filterEntriesByContentType(entries, contentType) {
+  if (contentType === 'movies') {
+    return entries.filter(entry => entry.type === 'movie');
+  }
+
+  if (contentType === 'shows') {
+    return entries.filter(entry => entry.type === 'episode');
+  }
+
+  return entries;
+}
+
+async function writeGraphFiles(entries, graphConfig, sharedOptions) {
+  const { contentType, outputBasePath } = graphConfig;
+  const outputPathDark = `${outputBasePath}-dark.svg`;
+  const outputPathLight = `${outputBasePath}-light.svg`;
+
+  const dir = path.dirname(outputPathDark);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  const totalMovies = entries.filter(entry => entry.type === 'movie').length;
+  const totalEpisodes = entries.filter(entry => entry.type === 'episode').length;
+  const svgOptions = {
+    ...sharedOptions,
+    contentType,
+    moviesCount: totalMovies,
+    episodesCount: totalEpisodes
+  };
+
+  let svgDark;
+  let svgLight;
+
+  if (sharedOptions.years.length > 1) {
+    svgDark = generateMultiYearSvg(entries, { ...svgOptions, theme: 'dark' });
+    svgLight = generateMultiYearSvg(entries, { ...svgOptions, theme: 'light' });
+  } else {
+    svgDark = generateSvg(entries, { ...svgOptions, year: sharedOptions.years[0], theme: 'dark' });
+    svgLight = generateSvg(entries, { ...svgOptions, year: sharedOptions.years[0], theme: 'light' });
+  }
+
+  fs.writeFileSync(outputPathDark, svgDark);
+  fs.writeFileSync(outputPathLight, svgLight);
+  console.log(`   ✓ ${outputPathDark}`);
+  console.log(`   ✓ ${outputPathLight}`);
+
+  if (sharedOptions.exportPng) {
+    const pngPathDark = outputPathDark.replace('.svg', '.png');
+    const pngPathLight = outputPathLight.replace('.svg', '.png');
+
+    await svgToPng(svgDark, pngPathDark);
+    await svgToPng(svgLight, pngPathLight);
+  }
+}
 
 async function main() {
   try {
@@ -29,6 +109,7 @@ async function main() {
     let usernameGradient = true;
     let exportPng = false;
     let contentType = "all"; // 'movies', 'shows', or 'all'
+    let generateAllVariants = false;
     let yearsSpecified = false;
 
     // Parse arguments
@@ -89,6 +170,9 @@ async function main() {
               i++;
             }
             break;
+          case 'all-variants':
+            generateAllVariants = true;
+            break;
           default:
             console.warn(`Unknown flag "${flag}", ignoring`);
         }
@@ -135,6 +219,7 @@ async function main() {
       console.log("  -p            Also export PNG files");
       console.log("  -m <mode>     Graph mode: count or rating (default: count)");
       console.log("  -t <type>     Content type: movies, shows, or all (default: all)");
+      console.log("  --all-variants Generate combined, movies, and shows graphs in one run");
       process.exit(1);
     }
 
@@ -145,17 +230,16 @@ async function main() {
       process.exit(1);
     }
 
-    const outputPathDark = `${outputBasePath}-dark.svg`;
-    const outputPathLight = `${outputBasePath}-light.svg`;
+    const graphConfigs = getVariantConfigs(outputBasePath, contentType, generateAllVariants);
 
     console.log(`\n📺 Trakt Contribution Graph Generator\n`);
     console.log(`Username: ${username}`);
     console.log(`Years: ${years.join(', ')}`);
-    console.log(`Content: ${contentType}`);
+    console.log(`Content: ${generateAllVariants ? 'all variants' : contentType}`);
     console.log(`Week starts on: ${weekStart}`);
     console.log(`Gradient: ${usernameGradient ? '✓' : '✗'}`);
     console.log(`PNG Export: ${exportPng ? '✓' : '✗'}`);
-    console.log(`Output: ${outputPathDark}, ${outputPathLight}\n`);
+    console.log(`Outputs: ${graphConfigs.map(config => config.outputBasePath).join(', ')}\n`);
 
     // Fetch profile and stats
     console.log("📋 Fetching profile and stats...");
@@ -177,70 +261,35 @@ async function main() {
     // Fetch watch history
     console.log("📖 Fetching watch history...");
     const minYear = Math.min(...years);
-    const rawHistory = await fetchTraktHistory(username, contentType, minYear);
-    
-    // Process entries for all requested years
-    let allEntries = [];
-    for (const year of years) {
-      const { entries } = processTraktHistory(rawHistory, year);
-      allEntries = allEntries.concat(entries);
-    }
+    const fetchType = generateAllVariants ? 'all' : contentType;
+    const rawHistory = await fetchTraktHistory(username, fetchType, minYear);
+    const allEntries = collectEntriesForYears(rawHistory, years);
     
     console.log(`\n📊 Found ${allEntries.length} entries\n`);
 
     // Generate SVGs
     console.log("🎨 Generating SVG graphs...");
-    
-    const totalMovies = allEntries.filter(e => e.type === 'movie').length;
-    const totalEpisodes = allEntries.filter(e => e.type === 'episode').length;
 
-    const svgOptions = { 
+    const sharedOptions = {
+      years,
       weekStart, 
       username, 
       profileImage: profileImageBase64, 
       displayName,
       logoBase64,
       usernameGradient,
-      contentType,
-      moviesCount: totalMovies,
-      episodesCount: totalEpisodes,
-      followers: stats.followers
+      followers: stats.followers,
+      exportPng
     };
-    
-    let svgDark, svgLight;
-    
-    if (years.length > 1) {
-      // Multi-year generation
-      const multiOptions = { ...svgOptions, years };
-      svgDark = generateMultiYearSvg(allEntries, { ...multiOptions, theme: 'dark' });
-      svgLight = generateMultiYearSvg(allEntries, { ...multiOptions, theme: 'light' });
-    } else {
-      // Single year generation
-      const singleOptions = { ...svgOptions, year: years[0] };
-      svgDark = generateSvg(allEntries, { ...singleOptions, theme: 'dark' });
-      svgLight = generateSvg(allEntries, { ...singleOptions, theme: 'light' });
-    }
 
-    // Ensure output directory exists
-    const dir = path.dirname(outputPathDark);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-
-    // Write SVG files
-    fs.writeFileSync(outputPathDark, svgDark);
-    fs.writeFileSync(outputPathLight, svgLight);
-    console.log(`   ✓ ${outputPathDark}`);
-    console.log(`   ✓ ${outputPathLight}`);
-
-    // Export PNGs if requested
     if (exportPng) {
       console.log("\n📸 Exporting PNG files...");
-      const pngPathDark = outputPathDark.replace('.svg', '.png');
-      const pngPathLight = outputPathLight.replace('.svg', '.png');
-      
-      await svgToPng(svgDark, pngPathDark);
-      await svgToPng(svgLight, pngPathLight);
+    }
+
+    for (const graphConfig of graphConfigs) {
+      const variantEntries = filterEntriesByContentType(allEntries, graphConfig.contentType);
+      console.log(`\n   ${graphConfig.contentType}: ${variantEntries.length} entries`);
+      await writeGraphFiles(variantEntries, graphConfig, sharedOptions);
     }
     
     console.log(`\n✅ Done!\n`);

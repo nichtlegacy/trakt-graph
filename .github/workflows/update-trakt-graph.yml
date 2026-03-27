@@ -6,7 +6,6 @@ name: Update Trakt Graph
 env:
   TRAKT_USERNAME: "TheLagacyMiner"     # Your Trakt username
   YEARS: "2026,2025"                           # Years to generate (e.g. "2025,2024" or leave empty for current)
-  CONTENT_TYPE: "all"                 # "movies", "shows", or "all"
   EXPORT_PNG: "false"                 # Set to "true" to also generate PNG files
   WEEK_START: "sunday"                # "sunday" or "monday"
   GRADIENT: "true"                    # "true" for colored name, "false" for white
@@ -50,19 +49,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Generate Graph
+      - name: Generate Graphs
         run: |
-          # Build command based on configuration
-          CMD="node src/cli.js ${{ env.TRAKT_USERNAME }} -o images/github-trakt"
-          
-          if [ -n "${{ env.YEARS }}" ]; then CMD="$CMD -y ${{ env.YEARS }}"; fi
-          if [ "${{ env.CONTENT_TYPE }}" != "all" ]; then CMD="$CMD -t ${{ env.CONTENT_TYPE }}"; fi
-          if [ "${{ env.WEEK_START }}" = "monday" ]; then CMD="$CMD -w monday"; fi
-          if [ "${{ env.GRADIENT }}" = "false" ]; then CMD="$CMD -g false"; fi
-          if [ "${{ env.EXPORT_PNG }}" = "true" ]; then CMD="$CMD -p"; fi
-          
-          echo "Running: $CMD"
-          eval $CMD
+          set -euo pipefail
+
+          CMD=(node src/cli.js "${{ env.TRAKT_USERNAME }}" --all-variants -o images/github-trakt)
+
+          if [ -n "${{ env.YEARS }}" ]; then CMD+=(-y "${{ env.YEARS }}"); fi
+          if [ "${{ env.WEEK_START }}" = "monday" ]; then CMD+=(-w monday); fi
+          if [ "${{ env.GRADIENT }}" = "false" ]; then CMD+=(-g false); fi
+          if [ "${{ env.EXPORT_PNG }}" = "true" ]; then CMD+=(-p); fi
+
+          echo "Running: ${CMD[*]}"
+          "${CMD[@]}"
 
       - name: Commit and push changes
         run: |

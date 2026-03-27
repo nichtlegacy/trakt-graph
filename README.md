@@ -124,6 +124,7 @@ node src/cli.js <username> [options]
 | `-o <path>` | Output path (without extension) | `images/github-trakt` |
 | `-g <bool>` | Enable username gradient: `true` or `false` | `true` |
 | `-p` | Export PNG files in addition to SVG | Disabled |
+| `--all-variants` | Generate combined, movies-only, and shows-only graphs in one run | Disabled |
 
 ---
 
@@ -146,10 +147,17 @@ Full configuration is available in the workflow file header:
 env:
   TRAKT_USERNAME: "TheLagacyMiner"
   YEARS: ""              # e.g. "2025,2024" or empty for current
-  CONTENT_TYPE: "all"    # "movies", "shows", or "all"
   WEEK_START: "sunday"
   GRADIENT: "true"
 ```
+
+The workflow always generates all three graph variants:
+
+- `images/github-trakt-*.svg`
+- `images/trakt-movies-*.svg`
+- `images/trakt-shows-*.svg`
+
+It does this in a single CLI run, so Trakt data is fetched once and then reused for all outputs.
 
 ---
 
