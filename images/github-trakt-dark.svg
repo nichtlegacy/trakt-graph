@@ -84,7 +84,7 @@
       <tspan fill="#7d8590"> Movies</tspan>
       
       <tspan dx="5" fill="#7d8590">•</tspan>
-      <tspan dx="5" fill="#e6edf3">807</tspan>
+      <tspan dx="5" fill="#e6edf3">845</tspan>
       <tspan fill="#7d8590"> Episodes</tspan>
       
     </text>
@@ -97,36 +97,36 @@
     <text x="0" y="20" font-size="16" font-weight="600" fill="#e6edf3">2026</text>
     <!-- Items count (static, no tooltip) -->
     <g transform="translate(60, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#7d8590">278 Items</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#7d8590">316 Items</text>
     </g>
     
     <!-- Days Active with hover tooltip -->
     <g class="days-active-group" transform="translate(180, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#7d8590">86 Days Active</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#7d8590">90 Days Active</text>
       <g class="days-active-tooltip" transform="translate(-20, -115)">
         <rect x="0" y="0" width="200" height="105" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
         <text x="100" y="18" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="middle">Weekly Distribution</text>
         
-        <text x="27" y="32" font-size="9" fill="#f0f6fc" text-anchor="middle">64</text>
-        <rect x="20" y="35" width="14" height="45" rx="2" fill="#c41e2a"/>
+        <text x="27" y="34" font-size="9" fill="#f0f6fc" text-anchor="middle">68</text>
+        <rect x="20" y="37" width="14" height="43" rx="2" fill="#c41e2a"/>
         <text x="27" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">S</text>
-        <text x="51" y="47" font-size="9" fill="#f0f6fc" text-anchor="middle">43</text>
-        <rect x="44" y="50" width="14" height="30" rx="2" fill="#c41e2a"/>
+        <text x="51" y="45" font-size="9" fill="#f0f6fc" text-anchor="middle">51</text>
+        <rect x="44" y="48" width="14" height="32" rx="2" fill="#c41e2a"/>
         <text x="51" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">M</text>
-        <text x="75" y="50" font-size="9" fill="#f0f6fc" text-anchor="middle">39</text>
-        <rect x="68" y="53" width="14" height="27" rx="2" fill="#c41e2a"/>
+        <text x="75" y="51" font-size="9" fill="#f0f6fc" text-anchor="middle">41</text>
+        <rect x="68" y="54" width="14" height="26" rx="2" fill="#c41e2a"/>
         <text x="75" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">T</text>
-        <text x="99" y="52" font-size="9" fill="#f0f6fc" text-anchor="middle">35</text>
-        <rect x="92" y="55" width="14" height="25" rx="2" fill="#c41e2a"/>
+        <text x="99" y="54" font-size="9" fill="#f0f6fc" text-anchor="middle">37</text>
+        <rect x="92" y="57" width="14" height="23" rx="2" fill="#c41e2a"/>
         <text x="99" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">W</text>
-        <text x="123" y="53" font-size="9" fill="#f0f6fc" text-anchor="middle">34</text>
-        <rect x="116" y="56" width="14" height="24" rx="2" fill="#c41e2a"/>
+        <text x="123" y="55" font-size="9" fill="#f0f6fc" text-anchor="middle">34</text>
+        <rect x="116" y="58" width="14" height="22" rx="2" fill="#c41e2a"/>
         <text x="123" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">T</text>
-        <text x="147" y="67" font-size="9" fill="#f0f6fc" text-anchor="middle">14</text>
-        <rect x="140" y="70" width="14" height="10" rx="2" fill="#c41e2a"/>
+        <text x="147" y="68" font-size="9" fill="#f0f6fc" text-anchor="middle">14</text>
+        <rect x="140" y="71" width="14" height="9" rx="2" fill="#c41e2a"/>
         <text x="147" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">F</text>
-        <text x="171" y="43" font-size="9" fill="#f0f6fc" text-anchor="middle">49</text>
-        <rect x="164" y="46" width="14" height="34" rx="2" fill="#c41e2a"/>
+        <text x="171" y="32" font-size="9" fill="#f0f6fc" text-anchor="middle">71</text>
+        <rect x="164" y="35" width="14" height="45" rx="2" fill="#c41e2a"/>
         <text x="171" y="100" font-size="9" fill="#e6edf3" text-anchor="middle">S</text>
       </g>
     </g>
@@ -176,7 +176,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(17, -118)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -198,7 +198,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(34, -136)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -221,7 +221,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(51, -118)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -243,7 +243,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ed1c24"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(68, -190)">
           <rect x="0" y="0" width="280" height="182" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -289,7 +289,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ed1c24"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(102, -190)">
           <rect x="0" y="0" width="280" height="182" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -315,7 +315,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -118)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -337,7 +337,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ed1c24"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(136, -190)">
           <rect x="0" y="0" width="280" height="182" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -363,7 +363,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(153, -136)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -386,7 +386,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(170, -154)">
           <rect x="0" y="0" width="280" height="146" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -410,7 +410,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(187, -100)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -431,7 +431,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(204, -136)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -456,11 +456,14 @@
           rx="2"
           fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(221, -64)">
-          <rect x="0" y="0" width="280" height="56" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(221, -118)">
+          <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Sun, 29. Mar 2026: 1 item watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Sun, 29. Mar 2026: 4 items watched</tspan>
             <tspan x="10" dy="18">• Zootopia 2 (2025)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E16 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E15 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E14 (2000)</tspan>
           </text>
         </g>
       </a>
@@ -475,11 +478,12 @@
           rx="2"
           fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(238, -64)">
-          <rect x="0" y="0" width="280" height="56" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(238, -82)">
+          <rect x="0" y="0" width="280" height="74" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Sun, 5. Apr 2026: 1 item watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Sun, 5. Apr 2026: 2 items watched</tspan>
             <tspan x="10" dy="18">• Taxi Driver (1976)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S02E01 (2008)</tspan>
           </text>
         </g>
       </a>
@@ -1195,7 +1199,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(34, -101)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1256,7 +1260,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(85, -83)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1277,7 +1281,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(102, -119)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1300,7 +1304,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -119)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1323,7 +1327,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(136, -119)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1346,7 +1350,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(153, -119)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1369,7 +1373,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(170, -119)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1392,7 +1396,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(187, -83)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1413,7 +1417,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(204, -83)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -1434,12 +1438,19 @@
           width="14"
           height="14"
           rx="2"
-          fill="#161b22"
+          fill="#8b1a22"
         />
-        <g class="tooltip-group" transform="translate(221, -29)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(221, -155)">
+          <rect x="0" y="0" width="280" height="164" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Mon, 30. Mar 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Mon, 30. Mar 2026: 7 items watched</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E19 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E18 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S02E15 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S04E01 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E22 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E21 (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S03E17 (2000)</tspan>
           </text>
         </g>
       </a>
@@ -1454,11 +1465,12 @@
           rx="2"
           fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(238, -47)">
-          <rect x="0" y="0" width="280" height="56" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(238, -65)">
+          <rect x="0" y="0" width="280" height="74" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Mon, 6. Apr 2026: 1 item watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Mon, 6. Apr 2026: 2 items watched</tspan>
             <tspan x="10" dy="18">• Memento (2000)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S05E14 (2000)</tspan>
           </text>
         </g>
       </a>
@@ -2214,7 +2226,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(68, -84)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2236,7 +2248,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(85, -102)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2259,7 +2271,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(102, -66)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2280,7 +2292,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -66)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2301,7 +2313,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(136, -102)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2343,7 +2355,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(170, -66)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2364,7 +2376,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(187, -84)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2386,7 +2398,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(204, -66)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -2407,14 +2419,15 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(221, -66)">
-          <rect x="0" y="0" width="455" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(221, -84)">
+          <rect x="0" y="0" width="455" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Tue, 31. Mar 2026: 3 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Tue, 31. Mar 2026: 4 items watched</tspan>
             <tspan x="10" dy="18">• Jackass 3D (2010)</tspan>
             <tspan x="10" dy="18">• Sorry to Bother You (2018)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S04E05 (2000)</tspan>
             <tspan x="10" dy="18">• Shriek If You Know What I Did Last Friday the Thirteenth (2000)</tspan>
           </text>
         </g>
@@ -2428,12 +2441,13 @@
           width="14"
           height="14"
           rx="2"
-          fill="#161b22"
+          fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(238, -12)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(238, -30)">
+          <rect x="0" y="0" width="280" height="56" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Tue, 7. Apr 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Tue, 7. Apr 2026: 1 item watched</tspan>
+            <tspan x="10" dy="18">• The Mentalist S02E02 (2008)</tspan>
           </text>
         </g>
       </a>
@@ -3170,7 +3184,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(51, -67)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3231,7 +3245,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(102, -49)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3252,7 +3266,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -67)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3314,7 +3328,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(170, -67)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3336,7 +3350,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(187, -49)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3357,7 +3371,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(204, -67)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -3381,12 +3395,13 @@
           rx="2"
           fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(221, -31)">
-          <rect x="0" y="0" width="280" height="74" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(221, -49)">
+          <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Wed, 1. Apr 2026: 2 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Wed, 1. Apr 2026: 3 items watched</tspan>
             <tspan x="10" dy="18">• Pokémon 3: The Movie (2000)</tspan>
             <tspan x="10" dy="18">• Pokémon the Movie 2000 (1999)</tspan>
+            <tspan x="10" dy="18">• Malcolm in the Middle S04E06 (2000)</tspan>
           </text>
         </g>
       </a>
@@ -3399,12 +3414,13 @@
           width="14"
           height="14"
           rx="2"
-          fill="#161b22"
+          fill="#5c1015"
         />
-        <g class="tooltip-group" transform="translate(238, 5)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(238, -13)">
+          <rect x="0" y="0" width="280" height="56" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Wed, 8. Apr 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Wed, 8. Apr 2026: 1 item watched</tspan>
+            <tspan x="10" dy="18">• The Mentalist S02E03 (2008)</tspan>
           </text>
         </g>
       </a>
@@ -4101,7 +4117,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(0, -50)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -4123,7 +4139,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(17, -50)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -4204,7 +4220,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(85, -32)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -4245,7 +4261,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -32)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -4266,7 +4282,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(136, -32)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -4287,7 +4303,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(153, -50)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -5218,7 +5234,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -15)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -5239,7 +5255,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(136, -33)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6098,7 +6114,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(51, -34)">
           <rect x="0" y="0" width="364" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6121,7 +6137,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(68, -16)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6143,7 +6159,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(85, -16)">
           <rect x="0" y="0" width="280" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6165,7 +6181,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#8b1a22"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(102, 2)">
           <rect x="0" y="0" width="280" height="92" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6186,7 +6202,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#5c1015"
         />
         <g class="tooltip-group" transform="translate(119, -34)">
           <rect x="0" y="0" width="280" height="128" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6229,7 +6245,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ed1c24"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(153, -88)">
           <rect x="0" y="0" width="280" height="182" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6274,7 +6290,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(187, -52)">
           <rect x="0" y="0" width="280" height="146" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6298,7 +6314,7 @@
           width="14"
           height="14"
           rx="2"
-          fill="#c41e2a"
+          fill="#8b1a22"
         />
         <g class="tooltip-group" transform="translate(204, -52)">
           <rect x="0" y="0" width="315" height="146" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -6322,12 +6338,34 @@
           width="14"
           height="14"
           rx="2"
-          fill="#161b22"
+          fill="#ed1c24"
         />
-        <g class="tooltip-group" transform="translate(221, 56)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(221, -340)">
+          <rect x="0" y="0" width="280" height="434" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#f0f6fc">
-            <tspan x="10" dy="22" font-weight="600">Sat, 4. Apr 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Sat, 4. Apr 2026: 22 items watched</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E23 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E22 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E21 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E20 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E19 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E18 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E17 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E16 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E15 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E14 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E13 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E12 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E11 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E10 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E09 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E08 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E07 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E06 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E05 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E04 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E03 (2008)</tspan>
+            <tspan x="10" dy="18">• The Mentalist S01E02 (2008)</tspan>
           </text>
         </g>
       </a>
