@@ -80,11 +80,11 @@
       </a>
       
       <tspan dx="5" fill="#656d76">•</tspan>
-      <tspan dx="5" fill="#1f2328">395</tspan>
+      <tspan dx="5" fill="#1f2328">396</tspan>
       <tspan fill="#656d76"> Movies</tspan>
       
       <tspan dx="5" fill="#656d76">•</tspan>
-      <tspan dx="5" fill="#1f2328">863</tspan>
+      <tspan dx="5" fill="#1f2328">866</tspan>
       <tspan fill="#656d76"> Episodes</tspan>
       
     </text>
@@ -97,18 +97,18 @@
     <text x="0" y="20" font-size="16" font-weight="600" fill="#1f2328">2026</text>
     <!-- Items count (static, no tooltip) -->
     <g transform="translate(60, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">341 Items</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">345 Items</text>
     </g>
     
     <!-- Days Active with hover tooltip -->
     <g class="days-active-group" transform="translate(180, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">105 Days Active</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">106 Days Active</text>
       <g class="days-active-tooltip" transform="translate(-20, -115)">
         <rect x="0" y="0" width="200" height="105" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
         <text x="100" y="18" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">Weekly Distribution</text>
         
-        <text x="27" y="36" font-size="9" fill="#1f2328" text-anchor="middle">70</text>
-        <rect x="20" y="39" width="14" height="41" rx="2" fill="#ed4c55"/>
+        <text x="27" y="34" font-size="9" fill="#1f2328" text-anchor="middle">74</text>
+        <rect x="20" y="37" width="14" height="43" rx="2" fill="#ed4c55"/>
         <text x="27" y="100" font-size="9" fill="#1f2328" text-anchor="middle">S</text>
         <text x="51" y="44" font-size="9" fill="#1f2328" text-anchor="middle">56</text>
         <rect x="44" y="47" width="14" height="33" rx="2" fill="#ed4c55"/>
@@ -552,12 +552,16 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ebedf0"
+          fill="#ffc9cc"
         />
-        <g class="tooltip-group" transform="translate(306, -46)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(306, -118)">
+          <rect x="0" y="0" width="280" height="110" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#1f2328">
-            <tspan x="10" dy="22" font-weight="600">Sun, 3. May 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Sun, 3. May 2026: 4 items watched</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E02 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E01 (2017)</tspan>
+            <tspan x="10" dy="18">• Forensic Files S03E06 (1996)</tspan>
+            <tspan x="10" dy="18">• Man on the Moon (1999)</tspan>
           </text>
         </g>
       </a>
