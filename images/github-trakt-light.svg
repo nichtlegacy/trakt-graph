@@ -84,7 +84,7 @@
       <tspan fill="#656d76"> Movies</tspan>
       
       <tspan dx="5" fill="#656d76">•</tspan>
-      <tspan dx="5" fill="#1f2328">873</tspan>
+      <tspan dx="5" fill="#1f2328">880</tspan>
       <tspan fill="#656d76"> Episodes</tspan>
       
     </text>
@@ -97,12 +97,12 @@
     <text x="0" y="20" font-size="16" font-weight="600" fill="#1f2328">2026</text>
     <!-- Items count (static, no tooltip) -->
     <g transform="translate(60, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">353 Items</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">360 Items</text>
     </g>
     
     <!-- Days Active with hover tooltip -->
     <g class="days-active-group" transform="translate(180, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">109 Days Active</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">110 Days Active</text>
       <g class="days-active-tooltip" transform="translate(-20, -115)">
         <rect x="0" y="0" width="200" height="105" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
         <text x="100" y="18" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">Weekly Distribution</text>
@@ -116,11 +116,11 @@
         <text x="75" y="49" font-size="9" fill="#1f2328" text-anchor="middle">48</text>
         <rect x="68" y="52" width="14" height="28" rx="2" fill="#ed4c55"/>
         <text x="75" y="100" font-size="9" fill="#1f2328" text-anchor="middle">T</text>
-        <text x="99" y="52" font-size="9" fill="#1f2328" text-anchor="middle">42</text>
-        <rect x="92" y="55" width="14" height="25" rx="2" fill="#ed4c55"/>
+        <text x="99" y="50" font-size="9" fill="#1f2328" text-anchor="middle">46</text>
+        <rect x="92" y="53" width="14" height="27" rx="2" fill="#ed4c55"/>
         <text x="99" y="100" font-size="9" fill="#1f2328" text-anchor="middle">W</text>
-        <text x="123" y="56" font-size="9" fill="#1f2328" text-anchor="middle">36</text>
-        <rect x="116" y="59" width="14" height="21" rx="2" fill="#ed4c55"/>
+        <text x="123" y="54" font-size="9" fill="#1f2328" text-anchor="middle">39</text>
+        <rect x="116" y="57" width="14" height="23" rx="2" fill="#ed4c55"/>
         <text x="123" y="100" font-size="9" fill="#1f2328" text-anchor="middle">T</text>
         <text x="147" y="68" font-size="9" fill="#1f2328" text-anchor="middle">16</text>
         <rect x="140" y="71" width="14" height="9" rx="2" fill="#ed4c55"/>
@@ -3515,10 +3515,14 @@
           rx="2"
           fill="#ffc9cc"
         />
-        <g class="tooltip-group" transform="translate(306, -13)">
-          <rect x="0" y="0" width="280" height="56" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(306, -85)">
+          <rect x="0" y="0" width="280" height="128" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#1f2328">
-            <tspan x="10" dy="22" font-weight="600">Wed, 6. May 2026: 1 item watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Wed, 6. May 2026: 5 items watched</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E13 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E12 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E11 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E10 (2017)</tspan>
             <tspan x="10" dy="18">• Young Sheldon S01E09 (2017)</tspan>
           </text>
         </g>
@@ -4504,12 +4508,15 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ebedf0"
+          fill="#ffc9cc"
         />
-        <g class="tooltip-group" transform="translate(306, 22)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(306, -32)">
+          <rect x="0" y="0" width="280" height="92" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#1f2328">
-            <tspan x="10" dy="22" font-weight="600">Thu, 7. May 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Thu, 7. May 2026: 3 items watched</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E16 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E15 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E14 (2017)</tspan>
           </text>
         </g>
       </a>
