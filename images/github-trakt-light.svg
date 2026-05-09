@@ -80,11 +80,11 @@
       </a>
       
       <tspan dx="5" fill="#656d76">•</tspan>
-      <tspan dx="5" fill="#1f2328">397</tspan>
+      <tspan dx="5" fill="#1f2328">398</tspan>
       <tspan fill="#656d76"> Movies</tspan>
       
       <tspan dx="5" fill="#656d76">•</tspan>
-      <tspan dx="5" fill="#1f2328">880</tspan>
+      <tspan dx="5" fill="#1f2328">883</tspan>
       <tspan fill="#656d76"> Episodes</tspan>
       
     </text>
@@ -97,35 +97,35 @@
     <text x="0" y="20" font-size="16" font-weight="600" fill="#1f2328">2026</text>
     <!-- Items count (static, no tooltip) -->
     <g transform="translate(60, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">360 Items</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">364 Items</text>
     </g>
     
     <!-- Days Active with hover tooltip -->
     <g class="days-active-group" transform="translate(180, 5)">
-      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">110 Days Active</text>
+      <text x="0" y="15" font-size="14" font-weight="500" fill="#656d76">112 Days Active</text>
       <g class="days-active-tooltip" transform="translate(-20, -115)">
         <rect x="0" y="0" width="200" height="105" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
         <text x="100" y="18" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">Weekly Distribution</text>
         
-        <text x="27" y="34" font-size="9" fill="#1f2328" text-anchor="middle">74</text>
-        <rect x="20" y="37" width="14" height="43" rx="2" fill="#ed4c55"/>
+        <text x="27" y="35" font-size="9" fill="#1f2328" text-anchor="middle">74</text>
+        <rect x="20" y="38" width="14" height="42" rx="2" fill="#ed4c55"/>
         <text x="27" y="100" font-size="9" fill="#1f2328" text-anchor="middle">S</text>
-        <text x="51" y="42" font-size="9" fill="#1f2328" text-anchor="middle">60</text>
-        <rect x="44" y="45" width="14" height="35" rx="2" fill="#ed4c55"/>
+        <text x="51" y="43" font-size="9" fill="#1f2328" text-anchor="middle">60</text>
+        <rect x="44" y="46" width="14" height="34" rx="2" fill="#ed4c55"/>
         <text x="51" y="100" font-size="9" fill="#1f2328" text-anchor="middle">M</text>
-        <text x="75" y="49" font-size="9" fill="#1f2328" text-anchor="middle">48</text>
-        <rect x="68" y="52" width="14" height="28" rx="2" fill="#ed4c55"/>
+        <text x="75" y="50" font-size="9" fill="#1f2328" text-anchor="middle">48</text>
+        <rect x="68" y="53" width="14" height="27" rx="2" fill="#ed4c55"/>
         <text x="75" y="100" font-size="9" fill="#1f2328" text-anchor="middle">T</text>
-        <text x="99" y="50" font-size="9" fill="#1f2328" text-anchor="middle">46</text>
-        <rect x="92" y="53" width="14" height="27" rx="2" fill="#ed4c55"/>
+        <text x="99" y="51" font-size="9" fill="#1f2328" text-anchor="middle">46</text>
+        <rect x="92" y="54" width="14" height="26" rx="2" fill="#ed4c55"/>
         <text x="99" y="100" font-size="9" fill="#1f2328" text-anchor="middle">W</text>
-        <text x="123" y="54" font-size="9" fill="#1f2328" text-anchor="middle">39</text>
-        <rect x="116" y="57" width="14" height="23" rx="2" fill="#ed4c55"/>
+        <text x="123" y="55" font-size="9" fill="#1f2328" text-anchor="middle">39</text>
+        <rect x="116" y="58" width="14" height="22" rx="2" fill="#ed4c55"/>
         <text x="123" y="100" font-size="9" fill="#1f2328" text-anchor="middle">T</text>
-        <text x="147" y="68" font-size="9" fill="#1f2328" text-anchor="middle">16</text>
-        <rect x="140" y="71" width="14" height="9" rx="2" fill="#ed4c55"/>
+        <text x="147" y="67" font-size="9" fill="#1f2328" text-anchor="middle">17</text>
+        <rect x="140" y="70" width="14" height="10" rx="2" fill="#ed4c55"/>
         <text x="147" y="100" font-size="9" fill="#1f2328" text-anchor="middle">F</text>
-        <text x="171" y="32" font-size="9" fill="#1f2328" text-anchor="middle">77</text>
+        <text x="171" y="32" font-size="9" fill="#1f2328" text-anchor="middle">80</text>
         <rect x="164" y="35" width="14" height="45" rx="2" fill="#ed4c55"/>
         <text x="171" y="100" font-size="9" fill="#1f2328" text-anchor="middle">S</text>
       </g>
@@ -5481,12 +5481,13 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ebedf0"
+          fill="#ffc9cc"
         />
-        <g class="tooltip-group" transform="translate(306, 39)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(306, 21)">
+          <rect x="0" y="0" width="280" height="56" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#1f2328">
-            <tspan x="10" dy="22" font-weight="600">Fri, 8. May 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Fri, 8. May 2026: 1 item watched</tspan>
+            <tspan x="10" dy="18">• Man on the Moon (1999)</tspan>
           </text>
         </g>
       </a>
@@ -6494,12 +6495,15 @@
           width="14"
           height="14"
           rx="2"
-          fill="#ebedf0"
+          fill="#ffc9cc"
         />
-        <g class="tooltip-group" transform="translate(306, 56)">
-          <rect x="0" y="0" width="280" height="38" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
+        <g class="tooltip-group" transform="translate(306, 2)">
+          <rect x="0" y="0" width="280" height="92" rx="6" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
           <text font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="12" fill="#1f2328">
-            <tspan x="10" dy="22" font-weight="600">Sat, 9. May 2026: 0 items watched</tspan>
+            <tspan x="10" dy="22" font-weight="600">Sat, 9. May 2026: 3 items watched</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E19 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E18 (2017)</tspan>
+            <tspan x="10" dy="18">• Young Sheldon S01E17 (2017)</tspan>
           </text>
         </g>
       </a>
