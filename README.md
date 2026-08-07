@@ -12,6 +12,15 @@
   <strong>Transform your Trakt watch history into a beautiful GitHub-style contribution graph</strong>
 </p>
 
+> [!WARNING]
+> **Project status: unmaintained / archived in practice.**
+>
+> Trakt has changed its API access policy: **free accounts can now only register a single API application**. Since my one available app slot is used by [Kometa](https://kometa.wiki/), I can no longer run this project on my own account, and my graph is no longer updated.
+>
+> The code still works if you have a free API app slot available (or a Trakt VIP account, which allows more applications). But I am no longer actively developing or testing it. Issues and pull requests may go unanswered — feel free to fork.
+>
+> See [Trakt API limitations](#-trakt-api-limitations) for details and workarounds.
+
 <p align="center">
   <a href="https://trakt.tv/users/TheLagacyMiner/" target="_blank">
     <picture>
@@ -69,6 +78,9 @@
 Click the **Fork** button at the top-right of this page.
 
 ### 2. Configure Trakt API
+
+> [!IMPORTANT]
+> Free Trakt accounts are limited to **one API application**. If that slot is already taken by another tool (Kometa, Tautulli integrations, a Trakt scrobbler, ...), you must either reuse that application's Client ID or upgrade to Trakt VIP. See [Trakt API limitations](#-trakt-api-limitations).
 
 1. Go to [Trakt API App Setup](https://trakt.tv/oauth/applications) and create a new application.
 2. For **Redirect URI**, use `urn:ietf:wg:oauth:2.0:oob`.
@@ -204,6 +216,25 @@ trakt-graph/
   </a>
 </p>
 ```
+
+---
+
+## ⚠️ Trakt API Limitations
+
+Trakt tightened its API policy: a **free Trakt account can only have one registered API application** at a time. The Client ID of that single application is what this project uses as `TRAKT_API_KEY`.
+
+This has a direct consequence: if you already use your API app for another service — for example [Kometa](https://kometa.wiki/), a scrobbler, or a media-server integration — you cannot simply register a second app for `trakt-graph`.
+
+**Options if you hit this limit:**
+
+| Option | What it means |
+|--------|---------------|
+| **Reuse the existing Client ID** | Trakt applications are not bound to one tool. You can put the same Client ID into `TRAKT_API_KEY` and use it for both Kometa and this project. Only viable if the other tool does not depend on app-specific OAuth setup, and it means both tools share the same rate limit. |
+| **Trakt VIP** | A [VIP subscription](https://trakt.tv/vip) lifts the application limit, so you can register a dedicated app for this project. |
+| **Delete the other application** | Frees the slot, but breaks whatever tool was using it. |
+| **Stop using the project** | What I did — my slot is needed for Kometa. |
+
+Note that this project only performs **public, read-only** requests (watch history and profile of a public Trakt user), so it needs nothing more than a Client ID — no OAuth tokens, no user authorization.
 
 ---
 
