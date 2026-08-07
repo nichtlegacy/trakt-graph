@@ -103,6 +103,8 @@ env:
 
 Go to **Actions** tab → Enable workflows if prompted.
 
+The automatic triggers (`schedule` and `push`) are **commented out** in this repository, because there is no working API key here anymore. In your fork, uncomment them in `.github/workflows/update-trakt-graph.yml` to get daily updates.
+
 ### 5. Run the Workflow
 
 The graph updates daily at midnight UTC, or trigger manually via the **Actions** tab.

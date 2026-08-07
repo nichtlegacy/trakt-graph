@@ -10,20 +10,24 @@ env:
   WEEK_START: "sunday"                # "sunday" or "monday"
   GRADIENT: "true"                    # "true" for colored name, "false" for white
 
+# NOTE: Automatic triggers are disabled in this repository.
+# Trakt only allows one API application per free account, and mine is used by
+# another tool, so there is no valid TRAKT_API_KEY here and every scheduled run
+# would fail. If you fork this repo, uncomment the schedule and push triggers.
 on:
   # Daily at midnight UTC
-  schedule:
-    - cron: "0 0 * * *"
-  
+  # schedule:
+  #   - cron: "0 0 * * *"
+
   # On push to main
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'README.md'
-      - 'LICENSE'
-      - '.gitignore'
-  
+  # push:
+  #   branches:
+  #     - main
+  #   paths-ignore:
+  #     - 'README.md'
+  #     - 'LICENSE'
+  #     - '.gitignore'
+
   # Manual trigger
   workflow_dispatch:
 
